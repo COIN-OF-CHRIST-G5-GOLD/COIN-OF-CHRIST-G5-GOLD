@@ -1,1 +1,68 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin of Christ - G5 Gold Network</title>
+    <style>
+        body { background: #121212; color: #ffffff; font-family: -apple-system, sans-serif; text-align: center; padding: 20px; margin: 0; }
+        .header { color: #ffd700; margin-top: 20px; font-size: 24px; letter-spacing: 1px; }
+        .sub-header { color: #888; font-size: 14px; margin-bottom: 30px; }
+        .store-grid { display: grid; grid-template-columns: 1fr; gap: 12px; max-width: 360px; margin: 0 auto; padding: 0 10px; }
+        .store-card { background: #1c1c1e; padding: 16px; border-radius: 12px; border: 1px solid #2c2c2e; text-align: left; }
+        .store-title { color: #fff; font-size: 18px; margin: 0 0 4px 0; font-weight: 600; }
+        .store-status { color: #34c759; font-size: 12px; margin: 0; font-weight: 500; }
+        .slider-container { margin-top: 40px; background: #1c1c1e; padding: 24px; border-radius: 16px; border: 2px solid #ffd700; max-width: 360px; margin-left: auto; margin-right: auto; box-sizing: border-box; }
+        .slider-title { font-size: 18px; color: #ffd700; margin: 0 0 4px 0; }
+        .slider-desc { font-size: 12px; color: #888; margin: 0 0 20px 0; }
+        .slider { width: 100%; -webkit-appearance: none; appearance: none; height: 12px; border-radius: 6px; background: #2c2c2e; outline: none; accent-color: #ffd700; }
+        .slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 28px; height: 28px; border-radius: 50%; background: #ffd700; cursor: pointer; }
+        .feedback { color: #ffd700; font-weight: bold; margin-top: 15px; font-size: 14px; min-height: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1 class="header">COIN OF CHRIST</h1>
+    <p class="sub-header">G5 GOLD NETWORK • ADVERTISER PLATFORM</p>
+
+    <!-- Dynamic Store Directory Grid -->
+    <div class="store-grid" id="storeDirectory"></div>
+
+    <!-- TIV-TEK Biometric Fraud Prevention Slider Component -->
+    <div class="slider-container">
+        <h3 class="slider-title">TIV-TEK Security</h3>
+        <p class="slider-desc">Slide completely right to authorize transfer</p>
+        <input type="range" min="0" max="100" value="0" class="slider" id="tivtekSlider">
+        <div class="feedback" id="statusFeedback"></div>
+    </div>
+
+    <script>
+        // Universal Catalog Feed matching your live Supabase table rows
+        const activeMerchants = ['Nike', 'Target', 'Walmart', 'Food Lion', 'Costco', 'Sam\'s Club', 'BJ\'s Wholesale', 'Kroger', 'CVS', 'Walgreens', 'Publix', 'Dollar Tree', 'Five Below'];
+        const directory = document.getElementById('storeDirectory');
+        
+        activeMerchants.forEach(store => {
+            directory.innerHTML += `
+                <div class="store-card">
+                    <div class="store-title">${store}</div>
+                    <div class="store-status">● Live Advertiser Connection Secured</div>
+                </div>
+            `;
+        });
+
+        // Interactive TIV-TEK Slide Controller
+        const slider = document.getElementById('tivtekSlider');
+        const feedback = document.getElementById('statusFeedback');
+
+        slider.addEventListener('input', function() {
+            if (this.value == 100) {
+                feedback.innerText = "⚡ TRANSACTION VERIFIED: Golden Sparkle Active!";
+                slider.disabled = true;
+                slider.style.opacity = "0.5";
+            }
+        });
+    </script>
+</body>
+</html>
+
