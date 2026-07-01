@@ -1,4 +1,4 @@
-## Hi there 👋
+COIN-OF-CHRIST-G5 GOLD
 
 <!--
 **COIN-OF-CHRIST-G5-GOLD/COIN-OF-CHRIST-G5-GOLD** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
